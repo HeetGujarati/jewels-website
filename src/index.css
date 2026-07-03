@@ -541,11 +541,13 @@ ul, ol { list-style: none; }
   background: rgba(34, 27, 29, 0.5);
   z-index: 998;
   opacity: 0;
-  transition: opacity var(--t-base);
+  visibility: hidden;
+  transition: all var(--t-base);
 }
 
 .mobile-nav-overlay.active {
   opacity: 1;
+  visibility: visible;
 }
 
 .mobile-nav {
